@@ -1,5 +1,5 @@
 title: "Apple Silicon Mac でローカル LLM を建てる"
-summary: "MacBook Pro M1 Pro 32GB を OpenAI 互換 API・MCP・自律エージェント開発の基盤として完全ヘッドレスで建て、運用・計測・拡張までを一気通貫で扱うハンズオン。AI駆動開発情報の4レイヤーモデル（半減期）における L1/L2 の『封じるスナップショット』。"
+summary: "MacBook Pro M1 Pro 32GB を OpenAI 互換 API・MCP・自律エージェント開発の基盤として完全ヘッドレスで建てる実践ハンズオン。Ollama / Open WebUI / SearXNG / LiteLLM / 自作 MCP を pip・LaunchDaemon 構成で組み上げ、観察・計測・運用・拡張までを一気通貫で扱う。"
 topics: ["llm", "ollama", "mac", "litellm", "mcp"]
 published: false
 price: 0
@@ -30,3 +30,4 @@ chapters:
   - a4-troubleshooting
   - a5-endpoints
   - a6-remote-dev
+  - 99-reading-guide

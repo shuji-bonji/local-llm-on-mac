@@ -4,21 +4,28 @@
 
 MacBook Pro M1 Pro 32GB を OpenAI 互換 API・MCP・自律エージェント開発の基盤として**完全ヘッドレス**で建て、運用・計測・拡張までを一気通貫で扱うハンズオン本です。
 
-## 位置づけ（AI駆動開発情報の半減期 / 4 レイヤーモデル）
+## 目的
 
-本書は **L1（Tips）/ L2（プロダクト）** レイヤー。半減期が短い（3〜18ヶ月）ため、**書いた時点で封じるスナップショット**として Zenn book で出します。長半減期の L3/L4 が維持され続ける VitePress サイトなのと対照的に、**媒体を半減期に合わせています**。
+特定のベンダーやツールに依存しない**選定眼と設計判断力**を、Apple Silicon Mac 1 台の上で「原理 → 設計 → 実装」を閉じながら積み上げること。あわせて、**クラウドに出せない秘匿データを自分の管理下で AI 活用**できる土台を作ります。
 
-| レイヤー | 半減期 | リポジトリ | 媒体 |
-| --- | --- | --- | --- |
-| L1 Tips / L2 プロダクト | 3〜18ヶ月 | 👈 本書 | Zenn book（封じる） |
-| L3 アーキテクチャ | 3〜5年 | [ai-agent-architecture](https://github.com/shuji-bonji/ai-agent-architecture) | VitePress（維持） |
-| L4 原理 | 10年+ | [understanding-llm-through-claude-code](https://github.com/shuji-bonji/understanding-llm-through-claude-code) | VitePress（維持） |
+## この本で得られること
 
-出典: [Discussion #80「AI駆動開発」情報の半減期](https://github.com/shuji-bonji/ai-agent-architecture/discussions/80)
+扱う範囲: サーバ構築（Ollama / Open WebUI / SearXNG / NFS）→ 観察と計測 → ゲートウェイ（LiteLLM）→ エージェント（LangChain.js）→ 自作 MCP → 実用例（翻訳パイプライン）→ 運用と拡張。
 
-## 状態
+代表的なユースケース:
 
-🚧 **WIP（構成スタブ段階）**。`config.yaml` は `published: false`。各章は構成のみのスタブで、本文は private リポジトリ `localllm-construction-practice`（作業台）の手順書から**蒸留（distill）**して順次執筆します。全体を実機で再構築検証してから公開する方針です。
+- **翻訳専門 LLM エージェント** — docx の書式を保ったまま翻訳し、品質を自動ゲート
+- **秘匿データを使った AI 活用** — 手元の文書・コードを外に送らず検索・要約・QA
+- **コーディング補助** — VS Code で Copilot を代替
+- **領域特化エージェント** — 自作 MCP（法令・会計など）を呼ぶエージェント
+
+加えて、建てて運用する過程そのものが、**自分や業務に合わせて LLM を育てていく運用ノウハウ**（ローカル・クラウドを問わず通用する）の蓄積になります。
+
+## 進捗状況
+
+🚧 **WIP**。「はじめに」は執筆済みで、各章は構成スタブの段階。本文を順次追加していきます。`config.yaml` は `published: false`（Zenn には未公開）。
+
+章ごとの進捗は本文中のマークで示します: ✅ 執筆・検証済み / 🟡 一部確認 / 🚧 未着手。
 
 ## ローカルプレビュー
 
@@ -34,10 +41,9 @@ books/local-llm-on-apple-silicon/
   config.yaml          # タイトル / topics / published:false / chapters 順序
   00-intro.md          # はじめに（本文済み）
   01-overview.md 〜     # 各章（スタブ）
+  99-reading-guide.md  # 巻末：読み進め方と次の一歩
 articles/              # （未使用）
 ```
-
-章の状態マーク: ✅ 検証済み / 🟡 実験的に確認 / 🚧 未着手・構想
 
 ## ライセンス
 
