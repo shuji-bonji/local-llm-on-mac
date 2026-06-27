@@ -1,6 +1,6 @@
-# local-llm-on-apple-silicon
+# local-llm-on-mac
 
-> Zenn book **「Apple Silicon Mac でローカル LLM を建てる」** のソースリポジトリ。
+> Zenn book **「Mac でローカル LLM を建てる」** のソースリポジトリ。
 
 MacBook Pro M1 Pro 32GB を OpenAI 互換 API・MCP・自律エージェント開発の基盤として**完全ヘッドレス**で建て、運用・計測・拡張までを一気通貫で扱うハンズオン本です。
 
